@@ -1,0 +1,7 @@
+/* Extra retro glam utilities */
+.grain { pointer-events:none; position:absolute; inset:0; mix-blend:overlay; opacity:.22; background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2272%22 height=%2272%22 viewBox=%220 0 72 72%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%2272%22 height=%2272%22 filter=%22url(%23n)%22 opacity=%220.4%22/></svg>'); background-size: 200px 200px;}
+
+/* Neon underline hover */
+.neon-link { position: relative; }
+.neon-link:after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px; background: linear-gradient(90deg, #ec4899, #f97316, #f43f5e); transform: scaleX(0); transform-origin: left; transition: transform .25s ease; filter: drop-shadow(0 0 6px rgba(255,255,255,.6));}
+.neon-link:hover:after { transform: scaleX(1); }
